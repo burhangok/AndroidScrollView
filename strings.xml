@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">AndroidScrollView</string>
+
+    <string name="ustYazi">Günümüz mobil dünyası incelediğinde, pazar payının neredeyse %80\' ini elinde bulunduran Android işletim sistemi için mobil dünyanın dominant işletim sistemi desek sanırım çok da yanlış bir sonuca varmış olmayız. Şu an Android sayısız telefon ve tablet tarafından kullanılmakta ve bunun yanında pek çok farklı cihaz çeşidinde de aktif olarak kullanılmaktadır.
+
+Bu yazı da Android uygulama geliştirmenin dün yaşadığı sorunlardan, günümüzde meydana gelen önemli gelişmelerden ve geleceğe yönelik bir takım beklentilerden bahsedeceğim.
+
+Yukarı da saydığım Android açısından bütün olumlu özellikler düşünüldüğünde Android platformu açısından uygulama geliştirmenin kolay bir şey olduğu düşünülebilir. Bu gerçekten de böyle mi?
+
+
+Bundan bir kaç yıl önce Android uygulama geliştirmek ciddi mana da komplike bir yapıya sahip durumdaydı ve geliştiriciler açısından bakıldığında pek çok sorunlar olabiliyordu ve bazen basit bazı işlemleri tamamlamak bile zorlu süreçlere yol açabiliyordu. Gelin ilk olarak bu problemler nelerdi genel hatlarıyla onlara bakalım.
+Bu sorunların en başında sanırım tam olarak stabil yapıya sahip olmayan ve pek çok bug bulunduran IDE’ lerin olması en başta gelir. Bu IDE’ ler ile Android uygulaması geliştirmeye çalışmayı, günümüzde dedenizin Renault Broadway arabasıyla kız tavlamaya çalışmaya benzetiyorum. Android dünyasında sizi 10 dakika içerisinde deli sinirlerinizi zıplatabilecek resmi olarak kabul edilen bir IDE’ ye sahiptik. Gerçekten de Eclipse buglara sahip, kıyasla daha yavaş ve projeniz biraz daha kompleks bir yapı da ise ciddi anlamda sorunlara yol açabilen bir yapıya sahip durumdaydı. Doğal olarak bütün bunların sonunda ise, bir sorun çıkmadan her şeyin sorunsuz ilerlemesi için dua eder konuma geliyorduk.
+
+
+IDE ile ilgili sorunlardan sonra, sanırım sıra Android işletim sisteminin versiyon ve cihaz çeşitliliğinden kaynaklanan penetrasyon sorununa geldi. Günümüzde en son açıklanan raporlara göre, Gingerbread (2.3.7) sürümü pazar içerisinde %10–15 gibi bir kullanım oranına sahip bulunmaktadır. Herkesin bildiği gibi Android 4.0 (Ice Cream Sandwich) sürümünden sonra ciddi mana da işletim sistemi açısından gerek yeni arayüz elemanları olsun, gerekse cihaz donanımları için yeni API’ ler olsun gerekse de yeni ekran çözünürlükleri olsun pek çok yenilik yapılmaya başlandı. Bunun sonucunda geliştirdiğimiz uygulamaların eski Android versiyonlarında da aynı şekilde çalışabilmesi amacıyla daha dikkatli çalışmamızı gerektiren bir durumla karşı karşıya kaldık. Tüm bu olanlar bizim uygulama geliştirme sürecimizi etkiledi ve uygulamalarımızda pek çok buglar ve uygulamaların çalışmaması durumlarıyla karşılaştık.
+
+
+Yavaş emülatörler sanırım en Android uygulamaya başlayan geliştiricilerin en büyük problemlerinden birisidir. Aslında sadece yeni başlayanlar değil, her bir Android geliştiricisi içinde en büyük sorunlar arasında sayılabilir. Android uygulama geliştirirken eğer uygulamamızın çeşitli Android versiyonlarında ve telefonlarında düzgün bir şekilde çalışmasını istiyorsak, neredeyse 20' ye yakın sayıda cihaz satın almamız gerekmektedir. Bu da sanırım bizim için pahalıya mal olabilecek bir durum olsa gerek. Tamam, bu durum için emülatörler var elimizde. Ancak Android’ in default emülatörünü kullanmayı denediniz mi? Emülatör’ de uygulama denemeye kalktığınızda uygulamanızın emülatöre yüklenmesini beklerken kendinizi bilgisayar başında bir bölüm dizi izlerken bulabilirsiniz.
+
+Geçmişe dönüp baktığınızda Android uygulamalarının özellikle iOS uygulamaları karşısında kaybettiği nokta UI ile alakalıydı. iOS uygulamalarında herşey renkli ve animasyona sahip bir şekilde karşımıza çıkıyordu. Özellikle Gingerbread ve altı kullanan telefonları hala pazarda gördükçe geleceğe yönelik umutlarımızda tükeniyordu adeta.
+
+Tabi bütün bunların hepsi 2013 ve öncesine ait özellikler.
+
+</string>
+
+    <string name="altYazi">Yeni bir başlangıç
+Geçtiğimiz yıl içerisinde herşey değişmeye başladı. Asıl şaşırtıcı olan durum ise bu değişikliklerin çok hızlı bir şekilde gerçekleşmesi. Herşeyden önemlisi ise Android ekosisteminin pek çok yeniliğe sahip olmasıdır. Pek çok yeni donanım ürünü(akıllı saat vb. ), yeni yazılımlar ( Gradle, Android Studio) , yeni bir Android sürümü (Android 5.0)
+
+Tabi bu yeniliklerin meydana gelmesine Google’ dan cihaz üreticilerine, oradan geliştiricilere kadar herkes katkıda bulundu. Herkesin amacı aynıydı ve aklında tek bir soru vardı. “ Tamam şimdi daha stabil yapıda bir işletim sistemine ve milyarlarca kullanıcıya sahibiz. Bundan sonra Android’ i nasıl daha basit hale getiririz ve geliştiririz? Bu geliştirme sürecini daha iyi hale nasıl getiririz?” Burada işe Android ‘ in açık kaynak yapısı devreye giriyor (open access and open source).
+
+1. Android Studio
+
+Android uygulama için merkezi konumda olan Android Studio’ nun sonunda stable versiyonu olan 1.0 sürümü yayınlandı. İnternette neden Android uygulama geliştirmek için Android Studio’ yu kullanmanız gerektiği ile ilgili pek çok kaynak bulabilirsiniz. Dolayısı ile bu konuda burada çok fazla detaya girmek istemiyorum. Sadece şunu söylemek istiyorum ki Eclipse ADT sürümü artık resmi olarak desteklenmemektedir. Dolayısıyla bütün uygulamalarınızı Android Studio ortamına taşımanızı şiddetle tavsiye ederim.
+
+2.Gradle
+
+Gradle, Android uygulamaları için birincil bir build sistemi olan Apache Ant’ ın yerini almış proje otomasyon aracı olarak tanımlanabilir. Herşeyi neredeyse herşeyi Gradle aracılığılıyla kontrol edebildiğimiz için, Android geliştiricileri arasında popülerlik kazandı. Neredeyse herşeyi derken neleri kastediyorum. Doğru konfigürasyon ayarlarının düzenlenmesinden, build numarasının artırılmasına external dependency işlemlerinin ayarlanmasına kadar pek çok işlemi kolaylıkla halledebiliyoruz.
+
+Bütün bu bahsettiklerimden dolayı Gradle bizler için bir nevi yönetim paneli konumuna geldi. Tabi bu kadar güzel özelliğin yanında Gradle ‘ ın şu an için execution zamanı ile ilgili ciddi bir sorunu bulunmaktadır. Biraz daha komplike projelerde ciddi olarak yavaş çalışabilmekte. Umuyorum ki gelecek sürümlerde bu sorun aşılmış olur.
+
+3. Lollipop
+
+Google Lollipop versiyonu için Android’ in tarihi boyunca yapılmış en büyük yenilik olduğunu söyledi ve bu konuda sonuna kadar haklılar. Lollipop’ a kadar her bir Android sürümü çeşitli yenilikler ve düzeltmeleri bizlere sundu. Lollipop ile birlikte pek çok değişiklik gösterdi. Ancak Lollipop ile ilgili en temel sorun sanırım eski sürümlerin güncellenmesi. Umuyorum ki ileri ki zamanlarda bu sorun aşılmış olur.
+
+4. Material Design
+Şimdiye kadar Android’ in yeni UI ve UX anlayışı olan Material Design ile ilgili pek çok blog yazısı yazıldı. Material Design Android dünyası açısından son bir kaç yıllık periyot incellendiğinde en önemli yenilik olarak görülebilir. Material Design Android uygulamalarına bakış açımızı yani look and feel anlayışımızı yeniden tanımlamamıza sebep oldu. Material Design ile ilgili sevdiğim en önemli özellik UX anlayışını tamamiyle yeniden tanımlamış olmasıdır. Peki nedir bu yeni UX anlayışı. Bizim için herşey önemlidir, hiç bir zaman ihmal edilecek ufak bir detay bulunmamaktadır (everything is important). Her zaman kullanıcının bütün reaksiyonlarına cevap verebilmeliyiz. Burada ikinci bir tanım devreye giriyor. Her bir hareket bir anlam ifade etmektedir(motion provides meaning). Yeni canlı renkler, büyük fontlar, herbir adımda animasyonlar kullanarak yeni bir anlayışı uygulamalarımıza getirmiş oluyoruz. Kısaca hayatın kendisini geliştirdiğimiz uygulamalarımıza katıyoruz. Ayrıca Material Design pek çok farklı ekran çözünürlüğüne sahip cihazlara ortak bir arayüz anlayışını sunduğundan ekosisteme de genel bir çeki düzen vermeyi amaçlamaktadır.
+
+
+5. Android Runtime ART
+Dalvik her ne kadar mobil odaklı ve kısıtlı kaynaklarla çalışabilecek bir yapı olsa da, bazı alanlarda iyileştirilmesi gereken ve zamanın şartlarına göre tasarlanmış, artık yavaş yavaş eskiyen bir runtime (çalışma zamanı).
+
+Google bunun farkında olduğu için yaklaşık 2 yıldır yeni bir runtime üzerinde çalışıyor, ismi ART yani Android Runtime. ART’ın çalışma şekli Dalvik’ten çok farklı. Dalvik, Android 2.2 sürümünden beri “Tam Zamanında” derleme (Just-In-Time — JIT compilation) kullanarak kodu derliyor. Uygulamamızı yazıp cihaza yüklediğimizde kod belli bir oranda derleniyor ve esas derleme ve optimizasyon uygulama çalışmaya başladığında yapılıyor. Bu işlem uygulama her çalıştığında yapılıyor. Tabii bu da uygulama her çalıştığında fazladan yük getiriyor ve daha az verimli çalışılmasına sebep oluyor.
+
+ART bu durumu tamamen ortadan kaldırmak için “Zamanın Ötesinde derleme” (Ahead-of-Time — AOT compilation) denilen bir işlemle bytecode derlemesini uygulama cihaza kurulurken yapıyor ve bytecode’u makine diline çeviriyor. Böylece her uygulama açılışında yeni bir sanal makine başlatma ve uygulama kodunu derleyerek çalıştırma yükü aradan çıkmış oluyor.
+
+6. Android heryerde
+Android’ in farklı platformlara yayılmaya başlamasıyla birlikte artık Android uygulama geliştiricileri akıllı saatlerden akıllı televizyonlara, hatta günlük olarak kullandığımız arabalarımızda kullanılmak üzere uygulamalar geliştirmeye başladılar bile. Tabi bu sadece bu kadar ile sınırlı değil.
+
+Önümüzde ki çok değil 5 yıl içerisinde çevremizde televizyondan tablete, kameradan bisiklete, mutfak eşyalarından arabalara kadar pek çok yerde Android’ i göreceğiz. Android bi nevi bir deney olarak başladı ve üzerinde mikro işlemci bulunan her cihazda çalışabileceğini bizlere kanıtladı.
+</string>
+</resources>
